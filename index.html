@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Desktop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="desktop-background"></div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Folder with label -->
+  <div class="folder-wrapper">
+    <img src="assets/Folder.png" class="folder" alt="Folder Icon">
+    <div class="folder-label">About Me</div>
+  </div>
+
+  <!-- New Projects Folder -->
+  <div class="folder-wrapper projects-folder">
+    <img src="assets/Folder.png" class="folder" alt="Folder Icon">
+    <div class="folder-label">Project 01</div>
+  </div>
+
+  <!-- Image window -->
+  <div class="window photo-window" id="photoWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closePhoto"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">me.jpg</span>
+    </div>
+    <div class="photo-content">
+      <img src="assets/img1lol.jpeg" alt="A picture of me">
+    </div>
+  </div>
+
+  <!-- About Me window -->
+  <div class="window" id="aboutWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closeAbout"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">aboutme.txt</span>
+    </div>
+    <div class="window-content">
+      <p>Hi! I'm Nayana, a CS student at Arizona State University. I love creating new things, having fun with different projects, and adding my own element to my ideas!</p>
+      I'm currently diving into full-stack web development and exploring the world of machine learning. I'm still discovering what I enjoy the most but I'm excited to keep learning, experimenting, and finding what clicks for me. </p>
+    </div>
+  </div>
+
+  <!-- Projects window -->
+  <div class="window" id="projectsWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closeProjects"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">projects.txt</span>
+    </div>
+    <div class="window-content">
+      <p>Here are some of my projects:</p>
+      <ul>
+        <li>Portfolio Website</li>
+        <li>Machine Learning Projects</li>
+        <li>Web Development Projects</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Project Video window -->
+  <div class="window" id="projectVideoWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closeProjectVideo"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">project_video.mp4</span>
+    </div>
+    <div class="video-content">
+      <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/vR1pxtDp0Tc" 
+        title="Project Video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Project Description window -->
+  <div class="window" id="projectDescWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closeProjectDesc"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">project_description.txt</span>
+    </div>
+    <div class="window-content">
+      <p>Developed a MATLAB program to control a LEGO Mindstorms robot with autonomous and manual modes, achieving 100 percent accuracy in obstacle detection and avoidance using the Ultrasonic Sensor</p>
+      <ul>
+        <li>Implemented left hand algorithm for obstacle avoidance and color-based behavior mapping</li>
+        <li>Triggered specific actions based on detected colors</li>
+        <li>Improved task completion speed by 30 percent</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
