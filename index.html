@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test Desktop</title>
+  <title>Nayana's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,6 +19,12 @@
   <div class="folder-wrapper projects-folder">
     <img src="assets/Folder.png" class="folder" alt="Folder Icon">
     <div class="folder-label">Project 01</div>
+  </div>
+
+  <!-- Project 02 Folder -->
+  <div class="folder-wrapper project02-folder">
+    <img src="assets/Folder.png" class="folder" alt="Folder Icon">
+    <div class="folder-label">Project 02</div>
   </div>
 
   <!-- Image window -->
@@ -113,6 +119,51 @@
         <li>Improved task completion speed by 30 percent</li>
       </ul>
     </div>
+  </div>
+
+  <!-- Project 02 Description window -->
+  <div class="window" id="project02DescWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closeProject02Desc"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">project02_description.txt</span>
+    </div>
+    <div class="window-content">
+      <p>Leveraged machine learning with scikit-learn to predict Phoenix weather patterns based on historical data.</p>
+      <ul>
+        <li>Built a Linear Regression model predicting Phoenix temperatures</li>
+        <li>Performed data preprocessing, feature engineering, and handled missing data</li>
+        <li>Achieved an R2 score of 0.85</li>
+        <li>Developed a Python script for real-time predictions</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Project 02 GitHub window -->
+  <div class="window" id="project02GitHubWindow" style="display: none;">
+    <div class="title-bar">
+      <div class="window-controls">
+        <span class="dot red" id="closeProject02GitHub"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="file-name">github_link.txt</span>
+    </div>
+    <div class="window-content">
+      <p>Check out the code here:</p>
+      <a href="https://github.com/nayana266/PhoenixWeatherPredictor/blob/main/PhoenixWeatherPredictor/weather.ipynb" target="_blank" class="github-link">
+        Phoenix Weather Predictor Repository
+      </a>
+    </div>
+  </div>
+
+  <!-- Resume Text File -->
+  <div class="file-wrapper resume-file">
+    <img src="assets/txt.png" class="file" alt="Text File Icon">
+    <div class="file-label">resume.txt</div>
   </div>
 
   <script src="script.js" defer></script>
