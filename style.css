@@ -14,7 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url('assets/grid.jpg');
+    background-image: url('./assets/grid.jpg');
     background-repeat: repeat;
     background-position: center;
   }
