@@ -1,3 +1,10 @@
+// View Counter Logic
+const viewCountElement = document.getElementById('viewCount');
+let viewCount = parseInt(localStorage.getItem('pageViews')) || 0;
+viewCount++;
+localStorage.setItem('pageViews', viewCount);
+viewCountElement.textContent = viewCount;
+
 const folder = document.querySelector('.folder-wrapper');
 const projectsFolder = document.querySelector('.projects-folder');
 const project02Folder = document.querySelector('.project02-folder');
