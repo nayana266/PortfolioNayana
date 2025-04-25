@@ -5,29 +5,33 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     height: 100vh;
     position: relative;
+    overflow: hidden;
   }
   
   .desktop-background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url('./assets/grid.jpg');
-    background-repeat: repeat;
+    background-image: url('../assets/grid.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.8;
   }
   
   .folder-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 100px;
     width: 100px;
     cursor: pointer;
+    z-index: 2;
   }
   
   .folder {
@@ -72,12 +76,12 @@ body {
   
   .projects-folder {
     top: 500px;
-    left: 850px;
+    left: 100px;
   }
   
   .project02-folder {
     top: 100px;
-    left: 400px;
+    left: 300px;
   }
   
   .window {
@@ -263,25 +267,27 @@ body {
 
   .resume-file {
     top: 500px;
-    left: 100px;
+    left: 300px;
   }
   
   .welcome-text {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
     width: 100%;
+    pointer-events: none;
   }
 
   .welcome-text h1 {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #000;
+    margin-bottom: 8px;
   }
 
   .welcome-text .portfolio {
@@ -290,7 +296,8 @@ body {
     font-style: italic;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #000;
+    opacity: 0.8;
   }
 
   .view-counter {
