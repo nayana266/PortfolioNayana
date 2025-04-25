@@ -78,12 +78,12 @@ body {
   
   .projects-folder {
     top: 500px;
-    left: 100px;
+    left: 850px;
   }
   
   .project02-folder {
-    top: 100px;
-    left: 300px;
+    top: 500px;
+    left: 1000px;
   }
   
   .window {
@@ -269,7 +269,7 @@ body {
 
   .resume-file {
     top: 500px;
-    left: 300px;
+    left: 100px;
   }
   
   .welcome-text {
